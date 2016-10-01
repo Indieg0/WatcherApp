@@ -12,6 +12,9 @@
 		6BAC6D1C1D9E64C200CE8645 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BAC6D1A1D9E64C200CE8645 /* Main.storyboard */; };
 		6BAC6D1E1D9E64C200CE8645 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BAC6D1D1D9E64C200CE8645 /* Assets.xcassets */; };
 		6BAC6D211D9E64C200CE8645 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BAC6D1F1D9E64C200CE8645 /* LaunchScreen.storyboard */; };
+		9DEC55D81D9EE3B4008BF57E /* MKGradientGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEC55D61D9EE3B4008BF57E /* MKGradientGenerator.swift */; };
+		9DEC55D91D9EE3B4008BF57E /* MKRingProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEC55D71D9EE3B4008BF57E /* MKRingProgressView.swift */; };
+		9DEC55DE1D9EFD41008BF57E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEC55DD1D9EFD41008BF57E /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		6BAC6D1D1D9E64C200CE8645 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6BAC6D201D9E64C200CE8645 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6BAC6D221D9E64C200CE8645 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DEC55D61D9EE3B4008BF57E /* MKGradientGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MKGradientGenerator.swift; path = MKRingProgressView/MKGradientGenerator.swift; sourceTree = "<group>"; };
+		9DEC55D71D9EE3B4008BF57E /* MKRingProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MKRingProgressView.swift; path = MKRingProgressView/MKRingProgressView.swift; sourceTree = "<group>"; };
+		9DEC55DD1D9EFD41008BF57E /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +65,10 @@
 				6BAC6D1A1D9E64C200CE8645 /* Main.storyboard */,
 				6BAC6D1D1D9E64C200CE8645 /* Assets.xcassets */,
 				6BAC6D1F1D9E64C200CE8645 /* LaunchScreen.storyboard */,
+				9DEC55D61D9EE3B4008BF57E /* MKGradientGenerator.swift */,
+				9DEC55D71D9EE3B4008BF57E /* MKRingProgressView.swift */,
 				6BAC6D221D9E64C200CE8645 /* Info.plist */,
+				9DEC55DD1D9EFD41008BF57E /* Constants.swift */,
 			);
 			path = Watcher;
 			sourceTree = "<group>";
@@ -137,8 +146,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DEC55DE1D9EFD41008BF57E /* Constants.swift in Sources */,
 				6BAC6D191D9E64C200CE8645 /* ViewController.swift in Sources */,
 				6BAC6D171D9E64C200CE8645 /* AppDelegate.swift in Sources */,
+				9DEC55D81D9EE3B4008BF57E /* MKGradientGenerator.swift in Sources */,
+				9DEC55D91D9EE3B4008BF57E /* MKRingProgressView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +314,7 @@
 				6BAC6D271D9E64C200CE8645 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
