@@ -12,6 +12,8 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var chargeLabel: UILabel!
     @IBOutlet weak var iphoneChargeCircle: MKRingProgressView!
+    @IBOutlet weak var modelNameLabel: UILabel!
+    @IBOutlet weak var iosVersion: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,9 +25,14 @@ class ViewController: UIViewController {
         
         configureProgressBar()
         configureNavigationBar()
+        configureView()
         
            }
     
+    func configureView() {
+        modelNameLabel.text = UIDevice.current.modelName
+        iosVersion.text = UIDevice.current.systemVersion
+    }
     
     func configureNavigationBar() -> Void {
         
@@ -43,7 +50,6 @@ class ViewController: UIViewController {
         shadowView.layer.shadowOffset = CGSize(width: 0, height: 2) 
         shadowView.layer.shadowRadius =  4
         self.view.addSubview(shadowView)
-
        
     }
     
@@ -53,7 +59,7 @@ class ViewController: UIViewController {
         iphoneChargeCircle.shadowOpacity = 0.5
         iphoneChargeCircle.backgroundRingColor = darkStyleColor
 
-        
+    
         switch UIDevice.current.batteryState {
         case .unknown:
             
@@ -84,6 +90,9 @@ class ViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         NotificationCenter.default.addObserver(self, selector: #selector(ViewController.batteryStateDidChange(_:)), name: NSNotification.Name.UIDeviceBatteryStateDidChange, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(ViewController.batteryLevelDidChange(_:)), name: NSNotification.Name.UIDeviceBatteryLevelDidChange, object: nil)
+        
+      
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -104,6 +113,9 @@ class ViewController: UIViewController {
 
         
     }
+    
+    
 
 }
+
 

@@ -52,17 +52,58 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="allowsAntialiasing" value="NO"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Watcher" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iGa-Ww-SbS">
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="7ni-Ua-Sah">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Model:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BMA-GP-heB">
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iPhone 5s" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4a3-Ce-yIP">
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="neS-xD-B4J">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iOS Version:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v8L-Bx-YM9">
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iOS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="reV-3W-Ohy">
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="DAx-dX-hkr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-0.5" id="2ar-Qn-wPj"/>
+                            <constraint firstItem="iGa-Ww-SbS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="63I-ni-7bd"/>
                             <constraint firstItem="DAx-dX-hkr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fcn-KM-8G2"/>
+                            <constraint firstItem="7ni-Ua-Sah" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gr5-Jx-L2c"/>
+                            <constraint firstItem="neS-xD-B4J" firstAttribute="top" secondItem="7ni-Ua-Sah" secondAttribute="bottom" constant="6" id="hrb-mH-rgf"/>
+                            <constraint firstItem="7ni-Ua-Sah" firstAttribute="top" secondItem="DAx-dX-hkr" secondAttribute="bottom" constant="23" id="nsr-Ga-YEo"/>
+                            <constraint firstItem="DAx-dX-hkr" firstAttribute="top" secondItem="iGa-Ww-SbS" secondAttribute="bottom" constant="36" id="wFq-aW-yc0"/>
+                            <constraint firstItem="neS-xD-B4J" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wfj-e4-gsl"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="wlp-NI-GWi"/>
                     <connections>
                         <outlet property="chargeLabel" destination="DhY-JT-hmn" id="eZ1-Y0-cr3"/>
+                        <outlet property="iosVersion" destination="reV-3W-Ohy" id="e8o-PC-pDT"/>
                         <outlet property="iphoneChargeCircle" destination="DAx-dX-hkr" id="xpz-Uc-otV"/>
+                        <outlet property="modelNameLabel" destination="4a3-Ce-yIP" id="noe-Um-6XX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

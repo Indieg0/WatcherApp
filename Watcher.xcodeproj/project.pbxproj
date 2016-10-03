@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B4BE6C01DA251C500A2A898 /* UIDevice+ModelName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4BE6BF1DA251C500A2A898 /* UIDevice+ModelName.swift */; };
 		6BAC6D171D9E64C200CE8645 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAC6D161D9E64C200CE8645 /* AppDelegate.swift */; };
 		6BAC6D191D9E64C200CE8645 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAC6D181D9E64C200CE8645 /* ViewController.swift */; };
 		6BAC6D1C1D9E64C200CE8645 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BAC6D1A1D9E64C200CE8645 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6B4BE6BF1DA251C500A2A898 /* UIDevice+ModelName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+ModelName.swift"; sourceTree = "<group>"; };
 		6BAC6D131D9E64C200CE8645 /* Watcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Watcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BAC6D161D9E64C200CE8645 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6BAC6D181D9E64C200CE8645 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -41,6 +43,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B4BE6BD1DA2424F00A2A898 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9DEC55DD1D9EFD41008BF57E /* Constants.swift */,
+				6B4BE6BF1DA251C500A2A898 /* UIDevice+ModelName.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		6B4BE6BE1DA2426300A2A898 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6BAC6D181D9E64C200CE8645 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		6BAC6D0A1D9E64C200CE8645 = {
 			isa = PBXGroup;
 			children = (
@@ -60,15 +79,15 @@
 		6BAC6D151D9E64C200CE8645 /* Watcher */ = {
 			isa = PBXGroup;
 			children = (
+				6B4BE6BE1DA2426300A2A898 /* Controller */,
+				6B4BE6BD1DA2424F00A2A898 /* Model */,
 				6BAC6D161D9E64C200CE8645 /* AppDelegate.swift */,
-				6BAC6D181D9E64C200CE8645 /* ViewController.swift */,
 				6BAC6D1A1D9E64C200CE8645 /* Main.storyboard */,
 				6BAC6D1D1D9E64C200CE8645 /* Assets.xcassets */,
 				6BAC6D1F1D9E64C200CE8645 /* LaunchScreen.storyboard */,
 				9DEC55D61D9EE3B4008BF57E /* MKGradientGenerator.swift */,
 				9DEC55D71D9EE3B4008BF57E /* MKRingProgressView.swift */,
 				6BAC6D221D9E64C200CE8645 /* Info.plist */,
-				9DEC55DD1D9EFD41008BF57E /* Constants.swift */,
 			);
 			path = Watcher;
 			sourceTree = "<group>";
@@ -150,6 +169,7 @@
 				6BAC6D191D9E64C200CE8645 /* ViewController.swift in Sources */,
 				6BAC6D171D9E64C200CE8645 /* AppDelegate.swift in Sources */,
 				9DEC55D81D9EE3B4008BF57E /* MKGradientGenerator.swift in Sources */,
+				6B4BE6C01DA251C500A2A898 /* UIDevice+ModelName.swift in Sources */,
 				9DEC55D91D9EE3B4008BF57E /* MKRingProgressView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
